@@ -1,0 +1,17 @@
+ALGORITHM tri_carte
+VAR
+i,j,n : INTEGER
+tab: array_name : ARRAY_OF INTEGER[n];
+tab: array_name:array_of INTEGER[n];
+BEGIN
+FOR i FROM 0 TO n DO
+v=tab[i];
+j=i
+WHILE (tab[j-1]>v)  DO
+     tab[j]=tab[j-1];
+     j=j-1
+    
+END_WHILE
+tab[j]=v
+END_FOR
+END
